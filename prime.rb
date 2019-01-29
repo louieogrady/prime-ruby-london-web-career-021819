@@ -5,3 +5,4 @@ def prime?(integer)
     |x| return false if (integer % x) == 0
   true
 end
+end
