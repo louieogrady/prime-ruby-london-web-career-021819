@@ -1,13 +1,4 @@
-def prime?(num)
-    return false if num <= 1
-    return true if num == 2 || 3
-    i = 4
-      while i < num
-        if num % i == 0
-          return false
-        else
-          return true
-        i += 1
-        end
-      end
-    end
+def prime?(integer)
+  (2..integer - 1).each {|x| return false if (integer % x) == 0 }
+  true
+end
